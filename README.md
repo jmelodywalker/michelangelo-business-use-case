@@ -1,4 +1,4 @@
-# Michelangelo OSS Field Notes
+# Michelangelo OSS Business Use Case
 
 A static field-notes artifact: public-source analysis of Uber's Michelangelo OSS, paired with a contributor walkthrough of an open issue. Built as an interview preparation reference and a reusable portfolio asset.
 
