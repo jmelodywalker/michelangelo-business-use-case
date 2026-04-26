@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-page text-ink font-sans;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-sans tracking-tight text-ink;
+    font-weight: 600;
+  }
+
+  /* Field-notes hairline rule */
+  hr.rule {
+    @apply border-0 border-t border-rule my-12;
+  }
+
+  /* Section eyebrow */
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em] text-muted;
+  }
+
+  /* Body text inside notes */
+  .prose-notes p {
+    @apply text-[15.5px] leading-[1.65] text-graphite;
+  }
+
+  .prose-notes p + p {
+    @apply mt-4;
+  }
+
+  /* Subtle card */
+  .card {
+    @apply bg-card border border-rule rounded-sm;
+  }
+}
